@@ -72,10 +72,10 @@ namespace EasyVideoScreensaver
             {
                 //Show video window on all screens
                 VideoWindow window = new VideoWindow(media);
-                window.Top = m.Bounds.Top / (m.DpiY / 96);
-                window.Left = m.Bounds.Left / (m.DpiX / 96);
-                window.Height = m.Bounds.Height / (m.DpiY / 96);
-                window.Width = m.Bounds.Width / (m.DpiX / 96);
+                window.Top = m.Bounds.Top / (m.DpiY / 96.0);
+                window.Left = m.Bounds.Left / (m.DpiX / 96.0);
+                window.Height = m.Bounds.Height / (m.DpiY / 96.0);
+                window.Width = m.Bounds.Width / (m.DpiX / 96.0);
                 window.Show();
             }
         }
